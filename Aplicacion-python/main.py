@@ -1,15 +1,16 @@
+from usuarios import acciones
+# import usuarios.acciones
+
 print("""
 Acciones disponibles: 
 - Registro 
 - Login
 """)
-
+hazEl = acciones.Acciones()
 accion = input("Que desea hacer?")
 
 if accion == "registro":
-    print("Ok!, vamos a registrarle en el sistema...")
-    # capturar campos de la bd
+    hazEl.registro()
 
 elif accion == "login":
-    print("ok!, Identificate en el sistema...")
-    # solicitar email y contraseña
+    hazEl.login()
