@@ -7,7 +7,7 @@ Acciones disponibles:
 - Login
 """)
 hazEl = acciones.Acciones()
-accion = input("Que desea hacer?")
+accion = input("Que desea hacer? ")
 
 if accion == "registro":
     hazEl.registro()
